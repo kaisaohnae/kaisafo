@@ -64,3 +64,20 @@ exit
 cd D:\Jenkins\Jenkins\.jenkins\workspace\DEV-EBABCRSFRONT
 npm run dev
 ```
+
+
+## deploy
+
+```
+npm run build
+cd dist
+echo 'bo.kaisa.co.kr' > CNAME
+git init
+git checkout -b main
+git add -A
+git commit -m 'deploy'
+git remote add origin "https://github.com/kaisaohnae/kaisafo.git"
+git push -u --force origin main
+Remove-Item -Recurse -Force .git
+cd ..
+```
