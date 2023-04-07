@@ -71,7 +71,7 @@ npm run dev
 ```
 npm run build
 cd dist
-echo 'bo.kaisa.co.kr' > CNAME
+echo 'kaisa.co.kr' > CNAME
 git init
 git checkout -b main
 git add -A
